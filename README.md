@@ -5,8 +5,7 @@ An end-to-end enterprise network and detection testing ground designed to simula
 ---
 
 ## 🏛️ Topology & Architecture
-*(Add your Draw.io architecture diagram here)*  
-![Network Topology](images/topology.png)
+![Enterprise Network & Security Architecture](<Network Infrastructure.png>)
 
 ### Core Segments
 * **Perimeter & DNS Defense:** Bare-metal Raspberry Pi running Pi-hole DNS sinkhole (~25% block rate), hardened with UFW and Fail2ban IPS.
