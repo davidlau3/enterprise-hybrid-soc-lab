@@ -1,0 +1,23 @@
+# Secrets and local environment files
+.env
+*.env
+*.pem
+*.key
+id_ed25519*
+*.kdbx
+
+# Lab artifacts that should never be committed
+*.iso
+*.qcow2
+*.vmdk
+*.log
+passwords.txt
+wordlists/
+
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp

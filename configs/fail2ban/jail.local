@@ -1,0 +1,14 @@
+# Fail2ban SSH jail for the Network Pi.
+# Location: /etc/fail2ban/jail.local (copied from jail.conf, only the [sshd] section changed)
+# Replace <CUSTOM_SSH_PORT> with the port set in /etc/ssh/sshd_config.
+
+[sshd]
+enabled  = true
+port     = <CUSTOM_SSH_PORT>
+# aggressive also catches key-based and pre-auth failures, not just bad passwords
+mode     = aggressive
+maxretry = 3
+findtime = 10m
+bantime  = 2m
+logpath  = %(sshd_log)s
+backend  = %(sshd_backend)s
